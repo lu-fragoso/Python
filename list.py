@@ -53,7 +53,52 @@ print(lista1)
 lista6.clear()
 print(lista6)
 
+#split -> divindo uma string e posteriormente colocando em uma lista (padrão -> separa por espaço)
+lista7 = 'a s d f g h j k l ç'
+lista7 = lista7.split()
+print(lista7)
+
+#join -> junta os indices de uma lista em uma string com o valor de separação.
+lista8 = ['a','b','c','d','e','f']
+lista8 = '$'.join(lista8)
+print(lista8)
+
+"""#interações na lista
+soma = 0
+for element in lista1:
+    print(element, end=' ')
+    soma = soma+element
+print("\n",soma)
 
 
+carrinho = []
+produto = ''
+while produto != 'exit':
+    print("Add um produto ou exit")
+    produto=input('Digite um produto:') 
+    if produto != 'exit':
+        carrinho.append(produto)
 
+for produto in carrinho:
+    print(produto, end=' ')
+"""
+
+# Tranformando a Lista em Tupla
+lista9 = [1,2,3,4,5,6,7,8,9,10]
+print(lista9)
+print(type(lista9))
+
+tupla = tuple(lista9)
+print(tupla)
+print(type(tupla))
+
+
+# Desempacotando a lista
+
+lista10 = [1,2,4]
+num1, num2, num3 = lista10
+print(num1)
+print(num2)
+print(num3)
+# Se for mais valores que desempacotadores -> erro (o inverso também)
 
